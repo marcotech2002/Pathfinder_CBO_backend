@@ -6,4 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CBO_IoC\CBO_IoC.csproj" />
+    <ProjectReference Include="..\CBO_MDE\CBO_MDE.csproj" />
+  </ItemGroup>
+
 </Project>

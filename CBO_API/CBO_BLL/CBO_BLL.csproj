@@ -11,4 +11,9 @@
     <Folder Include="Services\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CBO_BLL_Infra\CBO_BLL_Infra.csproj" />
+    <ProjectReference Include="..\CBO_Repository_Infra\CBO_Repository_Infra.csproj" />
+  </ItemGroup>
+
 </Project>

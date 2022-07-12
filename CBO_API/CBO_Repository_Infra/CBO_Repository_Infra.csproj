@@ -10,4 +10,8 @@
     <Folder Include="Repositories\Interfaces\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CBO_MDE\CBO_MDE.csproj" />
+  </ItemGroup>
+
 </Project>

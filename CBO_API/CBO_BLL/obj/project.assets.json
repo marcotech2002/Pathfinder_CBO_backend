@@ -1,11 +1,67 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "CBO_BLL_Infra/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "CBO_MDE": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CBO_BLL_Infra.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CBO_BLL_Infra.dll": {}
+        }
+      },
+      "CBO_MDE/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/CBO_MDE.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CBO_MDE.dll": {}
+        }
+      },
+      "CBO_Repository_Infra/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "CBO_MDE": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CBO_Repository_Infra.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CBO_Repository_Infra.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "CBO_BLL_Infra/1.0.0": {
+      "type": "project",
+      "path": "../CBO_BLL_Infra/CBO_BLL_Infra.csproj",
+      "msbuildProject": "../CBO_BLL_Infra/CBO_BLL_Infra.csproj"
+    },
+    "CBO_MDE/1.0.0": {
+      "type": "project",
+      "path": "../CBO_MDE/CBO_MDE.csproj",
+      "msbuildProject": "../CBO_MDE/CBO_MDE.csproj"
+    },
+    "CBO_Repository_Infra/1.0.0": {
+      "type": "project",
+      "path": "../CBO_Repository_Infra/CBO_Repository_Infra.csproj",
+      "msbuildProject": "../CBO_Repository_Infra/CBO_Repository_Infra.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "CBO_BLL_Infra >= 1.0.0",
+      "CBO_Repository_Infra >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\marco\\.nuget\\packages\\": {}
@@ -33,7 +89,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\marco\\source\\CBOProject\\Pathfinder_CBO_backend\\CBO_API\\CBO_BLL_Infra\\CBO_BLL_Infra.csproj": {
+              "projectPath": "C:\\Users\\marco\\source\\CBOProject\\Pathfinder_CBO_backend\\CBO_API\\CBO_BLL_Infra\\CBO_BLL_Infra.csproj"
+            },
+            "C:\\Users\\marco\\source\\CBOProject\\Pathfinder_CBO_backend\\CBO_API\\CBO_Repository_Infra\\CBO_Repository_Infra.csproj": {
+              "projectPath": "C:\\Users\\marco\\source\\CBOProject\\Pathfinder_CBO_backend\\CBO_API\\CBO_Repository_Infra\\CBO_Repository_Infra.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
