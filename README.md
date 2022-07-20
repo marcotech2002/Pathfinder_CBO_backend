@@ -6,6 +6,7 @@ O intuito deste projeto é ofertar uma aplicação para controle e análise de p
 Para o backend da aplicação são tomados como referência os conceitos de DDD(Domain Driven Design), como método de desenvolvimento e definição de arquitetura, e REST API, construindo os serviços a partir de requisições e respostas HTTP.
 
 ## Tecnologias
+* Framework:
 ![.Net](https://miro.medium.com/max/1400/1*7I6oONv2fGLQJcNEFA4QSw.png)
-
+* IDE:
 ![Visual Studio](https://www.pcguia.pt/wp-content/uploads/2021/11/VisualStudio.jpg)
