@@ -7,3 +7,5 @@ Para o backend da aplicação são tomados como referência os conceitos de DDD(
 
 ## Tecnologias
 ![.Net](https://miro.medium.com/max/1400/1*7I6oONv2fGLQJcNEFA4QSw.png)
+
+![Visual Studio](https://www.pcguia.pt/wp-content/uploads/2021/11/VisualStudio.jpg)
