@@ -6,5 +6,6 @@
         public string Name { get; set; }
         public string CPF { get; set; }
         public string MobileNumber { get; set; }
+        public bool IsActive { get; set; }
     }
 }
