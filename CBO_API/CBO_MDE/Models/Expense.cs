@@ -4,7 +4,7 @@
     {
         public int Id { get; set; }
         public float ExpenseValue { get; set; }
-        public Observation Observation { get; set; }
+        public List<ExpenseObservation> Observations { get; set; }
         public Venture Venture { get; set; }
     }
 }
