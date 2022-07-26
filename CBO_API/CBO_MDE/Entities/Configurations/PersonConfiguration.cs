@@ -1,11 +1,6 @@
 ﻿using CBO_MDE.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CBO_MDE.Entities.Configurations
 {
@@ -21,6 +16,16 @@ namespace CBO_MDE.Entities.Configurations
                 .HasColumnName("Name")
                 .HasColumnType("VARCHAR(30)")
                 .IsRequired();
+
+            builder.Property(person => person.MobileNumber)
+                .HasColumnName("MobileNumber")
+                .HasColumnType("CHAR(11)")
+                .IsRequired(false);
+
+            builder.Property(person => person.Email)
+                .HasColumnName("Email")
+                .HasColumnType("VARCHAR(30)")
+                .IsRequired(false);
 
             builder.Property(person => person.IsActive)
                 .HasColumnName("IsActive")

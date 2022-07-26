@@ -1,11 +1,6 @@
 ﻿using CBO_MDE.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CBO_MDE.Entities.Configurations
 {
@@ -20,6 +15,11 @@ namespace CBO_MDE.Entities.Configurations
             builder.Property(expense => expense.ExpenseValue)
                 .HasColumnName("ExpenseValue")
                 .HasColumnType("FLOAT")
+                .IsRequired();
+            
+            builder.Property(expense => expense.RegistrationDate)
+                .HasColumnName("RegistrationDate")
+                .HasColumnType("DATETIME")
                 .IsRequired();
 
             builder.HasMany(expense => expense.Observations)
