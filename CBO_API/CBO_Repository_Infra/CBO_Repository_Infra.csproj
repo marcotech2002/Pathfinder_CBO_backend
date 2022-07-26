@@ -7,11 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Repositories\Interfaces\" />
+    <ProjectReference Include="..\CBO_MDE\CBO_MDE.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CBO_MDE\CBO_MDE.csproj" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Repositories\" />
   </ItemGroup>
 
 </Project>
